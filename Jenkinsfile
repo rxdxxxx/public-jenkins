@@ -6,6 +6,12 @@ def tools = new org.devops.tools()
 
 pipeline {
     agent any
+    options {
+      timestamps()
+      skipDefaultCheckout()
+      disableConcurrentBuilds()
+      timeout(time:1,unit:'HOURS')
+    }
     stages {
         stage('Example') {
             steps {
