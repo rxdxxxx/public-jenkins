@@ -2,7 +2,7 @@
 
 def tools = new org.devops.tools()
 
-hello()
+// hello()
 
 pipeline {
     agent any
@@ -10,7 +10,7 @@ pipeline {
         stage('Example') {
             steps {
                 script {
-                    tools.PrintMes('hello rxdxxxx')
+                    tools.PrintMes('hello rxdxxxx','red')
                 }
             }
         }
