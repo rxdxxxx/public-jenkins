@@ -1,3 +1,3 @@
 def call() {
-  println('hello')
+  println('大哥大嫂 过年好!')
 }
